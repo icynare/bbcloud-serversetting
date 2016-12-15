@@ -27,7 +27,7 @@ mv mongodb-linux-x86_64-2.2.2 mongodb
 
 echo "配置mongodb环境变量"
 cd /etc
-sed  -i '$ a\ttt' profile
+sed  -i '$ a\PATH=$PATH:~/mongodb/bin/' profile
 echo "配置成功，进行配置文件生效"
 ./.profile
 
